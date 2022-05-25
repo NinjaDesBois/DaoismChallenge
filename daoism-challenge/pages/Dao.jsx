@@ -358,6 +358,9 @@ export default function DAO() {
         <meta name="description" content="DaoismNChallenge DAO" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Link href="/"> 
+      <a > <img className={styles.image} src="./daoism.png" alt="Home"/></a>
+      </Link>
 
       <div className={styles.main}>
         <div className={styles.mainchild}>
