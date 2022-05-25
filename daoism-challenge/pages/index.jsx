@@ -1,11 +1,13 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link"
 export default function Home() {
- 
-  
-  
+
  return (
+   
     <div className={styles.container}>
+    <Link href="/"> 
+      <a > <img className={styles.image} src="./daoism.png" alt="Home"/></a>
+      </Link>
  <h2 className={styles.title}>
           Welcome to My Daoism Challenge project
         </h2>
@@ -27,9 +29,6 @@ export default function Home() {
             </a>
           </Link>
         </div>
-        {/* <div>
-          <img className={styles.image} src="./yinyang.jpg" />
-         </div> */}
       </main>
       <footer className={styles.footer}>
        <a href="https://twitter.com/NinjaWeb3"> Made by  ⛩️ NinjaDB ⛩️</a>
@@ -37,3 +36,5 @@ export default function Home() {
     </div>
     
   )
+
+}
