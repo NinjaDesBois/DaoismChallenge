@@ -1,0 +1,85 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100vw;
+} */
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", Courier, monospace;
+    background-color: black;
+    color: aliceblue;
+    background-image: url('/yinyang.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+}
+
+.mainchild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.862);
+    font-weight: bold;
+    width: 60vw;
+    font-size: larger;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.button {
+    text-align: center;
+    width: 200px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+}
+
+.button:hover {
+    color: black;
+}
+
+.footer {
+    display: flex;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

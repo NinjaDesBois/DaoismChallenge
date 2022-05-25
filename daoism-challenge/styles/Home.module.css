@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100vw;
+    font-family: "Roboto", Courier, monospace;
+    background-color: black;
+    color: aliceblue;
+    background-image: url('/yinyang.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+}
+
+.main {
+    height: 90vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.rules {
+    background-color: rgba(0, 0, 0, 0.938);
+    font-weight: bold;
+    width: 60vw;
+    font-size: larger;
+}
+
+.button {
+    text-align: center;
+    width: 200px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+}
+
+.button:hover {
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .main {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
