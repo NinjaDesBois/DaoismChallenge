@@ -273,7 +273,7 @@ export default function DAO() {
       return (
         <div className={styles.description}>
           You do not own any DaoismNChallenge NFTs. <br />
-          <b>You cannot create or vote on proposals click here to -> <Link href="/Mint">MINT</Link> your first DaoismChallenge NFT</b>
+          <b>You cannot create or vote on proposals click here to &gt; <Link href="/Mint">MINT</Link> your first DaoismChallenge NFT</b>
           <b></b>
         </div>
       );
