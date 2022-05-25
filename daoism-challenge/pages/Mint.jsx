@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
 import styles from "../styles/mint.module.css";
+import Link from "next/link"
 
 export default function MintPage() {
  // walletConnected keep track of whether the user's wallet is connected or not
@@ -165,14 +166,17 @@ export default function MintPage() {
 
  return (
    <div>
+   
      <Head>
        <title>Daoism Challenge DAPP</title>
        <meta name="description" content="Daosim-DAO-Dapp" />
        <link rel="icon" href="/favicon.ico" />
      </Head>
-
+     <Link href="/"> 
+      <a > <img className={styles.imagehome} src="./daoism.png" alt="Home"/></a>
+      </Link>
      <div className={styles.main}>
-
+     
        <div className={styles.parent}>
          <h1 className={styles.title}>Welcome to my Daoism Challenge!</h1>
 
