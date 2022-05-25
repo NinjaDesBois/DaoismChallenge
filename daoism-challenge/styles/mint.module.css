@@ -10,6 +10,13 @@
     color: aliceblue;
 }
 
+.imagehome {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
 .footer {
     display: flex;
     padding: 2rem 0;
