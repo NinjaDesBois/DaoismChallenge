@@ -161,7 +161,7 @@ export default function DAO() {
       await fetchAllProposals();
     } catch (error) {
       console.error(error);
-      window.alert(error.data.message);
+      window.alert(error.message);
     }
   };
 
@@ -178,7 +178,7 @@ export default function DAO() {
       await fetchAllProposals();
     } catch (error) {
       console.error(error);
-      window.alert(error.data.message);
+      window.alert(error.message);
     }
   };
 
@@ -306,7 +306,7 @@ export default function DAO() {
       );
     } else {
       return (
-        <div>
+        <div className={styles.cardsContainer}>
             
           {proposals.map((p, index) => (
             <div key={index} className={styles.proposalCard}>
@@ -370,7 +370,7 @@ export default function DAO() {
           <h2>counter : {Counter}</h2>
           <br />
           <div className={styles.description}>
-            Your DaoismNChallengeFT NFT Balance: {nftBalance}
+            Your DaoismNChallenge NFT Balance: {nftBalance}
             <br />
             <br />
             Treasury Balance: {formatEther(treasuryBalance)} ETH
