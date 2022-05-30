@@ -5,8 +5,21 @@
     top: 10px;
 }
 
+.proposalCard {
+    min-width: 600px;
+    margin-bottom: 1rem;
+    border: white 2px solid;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cardsContainer {
+    margin: 20px;
+}
+
 .main {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
